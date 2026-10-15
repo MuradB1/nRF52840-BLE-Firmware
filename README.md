@@ -44,8 +44,8 @@ The projects cover the BLE peripheral life cycle: advertising, connecting, excha
 Requires the Nordic nRF Connect SDK and a connected nRF52840 DK. Each project needs its source file named `main.c` and its configuration named `prj.conf` inside a project folder, for example:
 
 ```bash
-mkdir lab8 && cd lab8
-cp ../Lab8_main.c src/main.c        # create src/ first if it does not exist
+mkdir -p lab8/src && cd lab8
+cp ../Lab8_main.c src/main.c
 cp ../Lab8_ble_adv.c ../Lab8_ble_adv.h src/
 cp ../Lab8_prj.conf prj.conf
 west build -b nrf52840dk/nrf52840
